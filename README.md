@@ -40,20 +40,31 @@
 *JavaScript:*
 
   Added interactivity using JavaScript.
+  
   Used addEventListener() to handle:
+  
     o	Form submission
     o	Scoring logic
     o	Page reload after submission
+    
   Compared user-selected answers with correct ones.
+  
   Displayed the score dynamically upon submission.
+  
 *Auto Reload Feature:*
+
   •	After displaying the result, the page automatically reloads after 5 seconds to allow   for a fresh attempt.
 
 *Features Implemented:*
+
   •	Dynamic score calculation
+  
   •	Clean and responsive UI
+  
   •	Auto-reload for repeated attempts
+  
   •	Interactive elements using JavaScript
+  
   •	Colorful and engaging quiz design
 
 
