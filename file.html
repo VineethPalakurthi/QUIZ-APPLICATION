@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Quiz</title>    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="header" class="container">
+        <h1 class="header">Quiz</h1>   
+        <h2>Answer the following multiple choice questions</h2>       
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <input type="radio" id="question1a" name="question1" value="Paris" required>
+                <label for="question1a">Paris</label>
+                <input type="radio" id="question1b" name="question1" value="London">
+                <label for="question1b">London</label>
+                <input type="radio" id="question1c" name="question1" value="Berlin">
+                <label for="question1c">Berlin</label>
+            </div>
+
+            <div class="question">
+                <p>2. Which planet is known as the Red Planet?</p>
+                <input type="radio" id="question2a" name="question2" value="Mars" required>
+                <label for="question2a">Mars</label>
+                <input type="radio" id="question2b" name="question2" value="Jupiter">
+                <label for="question2b">Jupiter</label>
+                <input type="radio" id="question2c" name="question2" value="Saturn">
+                <label for="question2c">Saturn</label>
+            </div>
+
+            <div class="question">
+                <p>3. Which element has the chemical symbol 'O'?</p>
+                <input type="radio" id="question3a" name="question3" value="Oxygen" required>
+                <label for="question3a">Oxygen</label>
+                <input type="radio" id="question3b" name="question3" value="Hydrogen">
+                <label for="question3b">Hydrogen</label>
+                <input type="radio" id="question3c" name="question3" value="Carbon">
+                <label for="question3c">Carbon</label>
+            </div>
+
+            <div class="question">
+                <p>4. Which gas do plants absorb from the atmosphere?</p>
+                <input type="radio" id="question4a" name="question4" value="Oxygen" required>
+                <label for="question4a">Oxygen</label>
+                <input type="radio" id="question4b" name="question4" value="Carbon Dioxide">
+                <label for="question4b">Carbon Dioxide</label>
+                <input type="radio" id="question4c" name="question4" value="Nitrogen">
+                <label for="question4c">Nitrogen</label>
+            </div>
+
+            <div class="question">
+                <p>5. Which is the largest mammal in the world?</p>
+                <input type="radio" id="question5a" name="question5" value="Blue Whale" required>
+                <label for="question5a">Blue Whale</label>
+                <input type="radio" id="question5b" name="question5" value="Elephant">
+                <label for="question5b">Elephant</label>
+                <input type="radio" id="question5c" name="question5" value="Giraffe">
+                <label for="question5c">Giraffe</label>
+            </div>
+
+            <button id="button" type="submit" class="button">Submit</button>
+        </form>
+
+        <div id="score" class="result">
+            <h2>Result</h2>
+            <p id="score-text"></p>
+        </div>
+        
+    </div>
+</body>
+</html>
