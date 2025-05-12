@@ -13,17 +13,27 @@
 
 *Technologies Used*
   •	HTML
+  
   •	CSS
+  
   •	JavaScript
+
+  
 *Development Steps:*
+
 *HTML:*
+
   Created the base structure of the quiz page using  HTML elements.
   Included multiple-choice questions using radio buttons  for answer selection.
+  
 *CSS:*
+
   Styled the quiz interface to make it visually appealing.
   Applied colors to the questions and answer sections using CSS color properties.
   Aligned elements properly for a clean and user-friendly layout.
+  
 *JavaScript:*
+
   Added interactivity using JavaScript.
   Used addEventListener() to handle:
     o	Form submission
