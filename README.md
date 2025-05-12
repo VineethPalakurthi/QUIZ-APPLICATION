@@ -67,4 +67,7 @@
   
   •	Colorful and engaging quiz design
 
+*OUTPUT*
 
+![Image](https://github.com/user-attachments/assets/345e0009-4389-4d1b-aac9-c795aca48ecb)
+![Image](https://github.com/user-attachments/assets/796d66d8-eb09-41ed-8ff4-97040bcd7a78)
