@@ -4,6 +4,7 @@ const scoreText = document.getElementById('score-text');
 
 quizForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
     const answers = {
         question1: 'paris',
         question2: 'mars',
@@ -13,11 +14,30 @@ quizForm.addEventListener("submit", function (event) {
     };
 
     let score = 0;
+
+    // Reset all label text color to default
+    document.querySelectorAll('label').forEach(label => {
+        label.style.color = '#0e0d0d'; // default text color
+    });
+
     for (let question in answers) {
+        const correctAnswer = answers[question];
         const selected = document.querySelector(`input[name="${question}"]:checked`);
+        const allOptions = document.querySelectorAll(`input[name="${question}"]`);
+
+        // Reset text color for all options
+        allOptions.forEach(option => {
+            const label = document.querySelector(`label[for="${option.id}"]`);
+            if (label) label.style.color = '#0e0d0d'; // reset to default
+        });
+
         if (selected) {
-            if (selected.value.trim().toLowerCase() === answers[question]) {
+            const label = document.querySelector(`label[for="${selected.id}"]`);
+            if (selected.value.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
                 score++;
+                if (label) label.style.color = 'green'; // Correct answer
+            } else {
+                if (label) label.style.color = 'red'; // Incorrect answer
             }
         }
     }
@@ -25,7 +45,7 @@ quizForm.addEventListener("submit", function (event) {
     scoreText.textContent = `You scored ${score}/5`;
     resultDiv.style.display = 'block';
 
-    // ✅ Reload after 5 seconds
+    // Reload after 5 seconds
     setTimeout(() => {
         window.location.reload();
     }, 5000);
